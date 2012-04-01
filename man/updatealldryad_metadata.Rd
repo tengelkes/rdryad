@@ -3,7 +3,7 @@
 \title{Update metadata for new Dryad oai's for defined time period to an existing csv file.}
 \usage{
   updatealldryad_metadata(file, overwrite = T,
-    newfile = NULL, progress = "text")
+    newfile = NULL)
 }
 \arguments{
   \item{file}{file containing previous import}

@@ -10,7 +10,7 @@
 #' updatealldrayad_metadata(file='~/path/to/data/dryad_metadata.csv',overwrite=F,overwrite=F,newfile='dryad_new')
 #' }
 updatealldryad_metadata <- function(file, overwrite = T,
-    newfile = NULL,progress="text") {
+    newfile = NULL) {
     df <- read.csv(file, header = T)
     myoailist <- listidentifiers("r")  # get all oai's
     myoailist <- llply(myoailist[[1]], function(x) x$identifier)  # list of file
